@@ -1,6 +1,7 @@
 from Vehicle_Class import *
 from Car_Class import *
 from Bicycle_Class import *
+from Car_Class_2 import *
 
 vehicle_1 = Vehicle(4, 5, 'Blue', 1989)
 
@@ -15,4 +16,16 @@ if bicycle_1.basket == False:
     print('That is a lovely {} {} bicycle with {} handlebars and {} gears but no basket'.format(bicycle_1.colour, bicycle_1.year, bicycle_1.handle_bar, bicycle_1.gears, bicycle_1.basket))
 else:
     print('That is a lovely {} {} bicycle with {} handlebars and {} gears and a basket.'.format(bicycle_1.colour, bicycle_1.year, bicycle_1.handle_bar, bicycle_1.gears, bicycle_1.basket))
+
+
+
+print('Proof of inheritance:')
+print(Car2(4,5,'green'))
+print(Car2(4,5,'green').make_sound()) # Inheriting the same methods as Vehicle class is INHERITANCE
+
+print('/////////////////////////////////')
+
+print('Proof of method polymorphism with make_sound():')
+print(Vehicle2(2,4, 'Blue').make_sound())
+print(Car2(2,4,'Blue').make_sound()) # METHOD POLYMORPHISM displayed by the same method being called on a parent class and its sub class but being different because it is defined wrong
 

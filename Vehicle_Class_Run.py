@@ -35,7 +35,9 @@ car_example = Car2(4,5,'green', 'Volvo', 'XC90', 'XOXOX')
 print('Playing with Encapsulation')
 print(car_example.wheels)
 print(car_example._accidents)
-# print(car_example.__miles) # This will break, because it is a private/encapsulated figure
+# print(car_example.__miles) # This will break, because it is a private/encapsulated characteristic/parameter
 
 print(car_example.set_miles(105))
 print(car_example.show_miles())
+
+# print(car_example.__add_miles()) # This will break, because it is a private method
